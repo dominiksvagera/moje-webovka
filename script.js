@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const mainContent = document.querySelector('main');
-    mainContent.innerHTML += '<p>JavaScript je funkční!</p>';
+    showPage('home');
 });
+
+function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+        page.classList.remove('active');
+        page.classList.add('hidden');
+    });
+
+    const activePage = document.getElementById(pageId);
+    activePage.classList.add('active');
+    activePage.classList.remove('hidden');
+}

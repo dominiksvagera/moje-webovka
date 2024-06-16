@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>Vítejte na mé první webové stránce</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Domů</a></li>
+                <li><a href="#" onclick="showPage('contact')">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p>Toto je základní webová stránka vytvořená pomocí HTML a CSS.</p>
+        <section id="home" class="page">
+            <h1>Vítejte na mé první webové stránce!</h1>
+        </section>
+        <section id="contact" class="page hidden">
+            <h1>Kontakt</h1>
+            <p>Telefon: 739 575 863
+                Email: dominik.svagera@gmail.com</p>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Moje webová stránka</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
