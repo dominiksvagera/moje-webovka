@@ -10,19 +10,23 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#" onclick="showPage('home')">Domů</a></li>
+                <li><a href="#" onclick="showPage('home')">Hlavní stránka</a></li>
                 <li><a href="#" onclick="showPage('contact')">Kontakt</a></li>
+                <li><a href="#" onclick="showPage('about')">O mně</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home" class="page">
+        <section id="home" class="page active">
             <h1>Vítejte na mé první webové stránce!</h1>
         </section>
         <section id="contact" class="page hidden">
             <h1>Kontakt</h1>
-            <p>Telefon: 739 575 863
-                Email: dominik.svagera@gmail.com</p>
+            <p>Zde doplňte své kontaktní údaje.</p>
+        </section>
+        <section id="about" class="page hidden">
+            <h1>O mně</h1>
+            <p>Zde doplňte informace o sobě.</p>
         </section>
     </main>
     <script src="script.js"></script>
